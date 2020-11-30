@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>START</title>
+  <meta name="description" value="Url checker.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{%static "css/colors.css" %}">
+  <link rel="stylesheet" type="text/css" href="{%static "css/modal.css" %}">
+  <link rel="stylesheet" type="text/css" href="{%static "css/index.css" %}">
+  <link rel="icon" type="image/png" href="{% static "img/se.png" %}">
+  <meta name="author" value="vanGato">
+</head>
+<body>
+  <div class="index">
+    <section class="index__header">
+      <div class="index__logo"></div>
+      <ul class="index__nav">
+      <div class="index__search">
+        <form class="index__form" action="{% url "resutl" %}" methode="GET">
+         {% csrf_token %}
+          <div>
+            <input name="query" type="url" 
+                   placeholder="http://example.org"
+                   class="index__query"
+                   maxlength="512"
+                   autocomplete="off"
+                   title="Search"
+                   aria-label="Search"
+                   dir="ltr"
+                   spellcheck="false" 
+                   autofocus="autofocus"
+            >
+          </div>
+          <button class="index__button" aria-label="Search" type="submit">
+            <div class="index__ico"></div>
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer class="index__footer">
+      <div class="index__bottom">
+        <ul class="index__links">
+          <li><a href="#about">Université Jean Monnet</a></li>
+        </ul>
+        <p class="index__copyright">&copy; 2020 SANOU Abou</p>
+      </div>
+    </footer>
+  </div>
+  <!-- Modal -->
+  <div class="modal" id="about" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__header">
+        <h2>About</h2>
+        <a href="#" class="modal__close" aria-hidden="true">×</a>
+      </div>
+      <div class="modal__body">
+        <strong>Lorem Ipsum</strong><br>
+        <p>SANOU Abou</p>
+      </div>
+      <div class="modal__footer">
+        <p>Last Update 01.01.2019</p>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal -->
+</body>
+</html>
