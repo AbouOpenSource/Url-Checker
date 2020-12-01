@@ -1,7 +1,8 @@
 /* ------- CSS only for the Startpage ------- */
 
 body {
-  background-image: url("https://lorempixel.com/1024/768/"), url("https://source.unsplash.com/random");
+  background-image: url("https://source.unsplash.com/random");
+  /*url("https://source.unsplash.com/random")url("/static/img/1.jpg")*/
   font-size: 16px;
   line-height: 1.2;
   background-size: cover;
@@ -15,7 +16,7 @@ body {
 
 .index__header,
 .index__bottom {
-  opacity: 0.7;
+  opacity: 0.9;
   background-color: var(--background-color);
 }
 
