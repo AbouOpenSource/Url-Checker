@@ -25,7 +25,7 @@ SECRET_KEY = '9=r34#o5*z=@nna4^cq&yxb)(@ovdix957#%e9ui8l@wbv#0_f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://mahkane.herokuapp.com/","127.0.0.1"]
+ALLOWED_HOSTS = ["mahkane.herokuapp.com/","127.0.0.1"]
 
 
 # Application definition
