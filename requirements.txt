@@ -10,5 +10,8 @@ numpy
 pandas
 matplotlib
 seaborn
+scikit-learn 
+scipy 
+matplotlib
 https://github.com/barseghyanartur/tld/archive/stable.tar.gz
 #urlparse
