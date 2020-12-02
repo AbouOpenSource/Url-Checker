@@ -1,0 +1,11 @@
+{% load static %}
+<link rel="stylesheet" href="{%static "css/indenegative.css" %}">
+
+<div class="congrats">
+	<h1> 
+        Link {{query}} n'est pas secure !!!!
+    </h1>
+    <a href="{% url 'home' %}"><button>HOME</button></a>
+</div>
+
+<script src="{%static "js/main.js" %}"></script>

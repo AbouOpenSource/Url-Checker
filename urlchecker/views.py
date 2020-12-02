@@ -12,5 +12,8 @@ def resutl(request):
     model = joblib.load("finalized_model.sav")
     data = utils.pre_processing_of_query(request.GET['query'])
     answer = model.predict([data])
-    return render(request, "urlchecker/result.html",{"answer": answer,
-                                                     "query" : request.GET['query'] })
+    print(answer)
+    if answer == 0:
+        return render(request, "urlchecker/positive.html",{"answer": answer,"query" : request.GET['query'] })
+    else:
+        return render(request, "urlchecker/negative.html",{"answer": answer,"query" : request.GET['query'] })
