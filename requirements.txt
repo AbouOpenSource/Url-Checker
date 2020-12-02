@@ -10,5 +10,5 @@ numpy
 pandas
 matplotlib
 seaborn
-tld
+tld==0.8
 #urlparse
