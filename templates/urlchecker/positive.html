@@ -1,9 +1,22 @@
 {% load static %}
-<link rel="stylesheet" href="{%static "css/inde.css" %}">
 
-<div class="congrats">
-	<h1>Congratulations! Link {{query}} est secure !!!!</h1>
-	<a href="{% url 'home' %}">Page d'accueil</a>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="{%static "css/index_green.css" %}">
 
-<script src="{%static "js/main.js" %}"></script>
+</head>
+<body>
+	<div class="congrats">
+		<h1>Congratulations! Votre lien  "{{query}}" est sécurisé !!!!</h1>
+		<a href="{% url 'home' %}">Page d'accueil</a>
+	</div>
+	<script src="{%static "js/main.js" %}"></script>
+		
+</body>
+</html>
+
+
