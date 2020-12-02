@@ -10,6 +10,5 @@ numpy
 pandas
 matplotlib
 seaborn
-joblib
-tld
-urlparse
+#tld
+#urlparse
