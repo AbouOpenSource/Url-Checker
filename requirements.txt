@@ -3,7 +3,7 @@ boto3
 Django==3.1
 pytz==2020.1
 sqlparse==0.3.1
-gitjoblib
+joblib
 gunicorn
 whitenoise
 numpy
